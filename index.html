@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6743948fba.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+<div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <h1>Hi, I'm <span>Anirudh</span><br> From India</h1>
+        </div>
+</div>
+<!--------------about-------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am from Lucknow,Uttar Pradesh,India.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Organic Chemistry</span></li>
+                    <li><span>Research</span></li>
+                    <li><span>Synthesis of Gemini Surfactants</span>
+                    <li><span>U.V spectrophotometer</span></li>
+                    <li><span>Solubilization of Ogranic Pollutants</span></li>
+                </ul>
+           </div>
+               <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span>Assistant Professor</span><br>I am working as Assistant Professor(Research)<br>in Central Research and Incubation Center,<br>SVSU,Meerut</li>
+                    <li><span>Project Researcher</span><br>at Osaka University of Pharmaceutical Sciences-Contract<br> April 2018-Dec 2019 - 1 yr 9 mos <br>Takatsuki,Osaka,Japan</li>
+                    <li><span>Postdoctoral Reseacher Fellow</span><br>Dalian University of Technology.Contract<br>Jan 2016-Mar 2018- 2 yrs 3mos<br>Dalian City,Liaoning,China</li>
+                    <li><span>Reserach Scolar</span><br>North-Eastern Hill University Jun 2009 - Jan 2015 5 yrs 8mos<br>Shillong,Meghalaya,India</li>
+                    <li><span>Quality Assurance</span><br>Agron Remidies Pvt.Ltd.<br>Chemical Testing,Disintegration test,Dissolution Test</li>
+                  </ul>
+               </div>
+                   <div class="tab-contents" id="education">
+                      <ul>
+                         <li><span>North-Eastern Hill University</span><br>Doctor of Philosophy(Ph.d),Chemistry<br>2009-2015</li>
+                         <li><span>Dalian University of Technology</span><br>postdoctoral research assosiate,Foam stability<br>nanoparticles,subrfactant,polymer<br>2005-2007</li>
+                        <li><span>Integral University</span><br>Master of Science(M.Sc),Industrial Chemistry<br>2005-2007</li>
+                        <li><span>University of Lucknow</span><br>Bachelor of Science(B.Sc),Chemistry<br>2002-2004</li>
+                        <li><span>New Public Inter College,Lucknow</span><br>1997-2002</li>
+                      </ul>
+                    </div>
+                </div>
+               </div>
+              </div>
+            </div>
+            <!---------Publications-->
+            <div id="services">
+                <div id="container">
+                    <h1 class="sub-title">Publications</h1>
+                    <div class="services-list">
+                        <div>
+                            <i class="fa-solid fa-flask-vial"></i>
+                            <h2><span>IPINDIA feb 11,2002</span></h2>
+                            <p>Mole-Fraction Based Formulation Using Drug-excipient<br>to Enhance the Solubility of Poorly Water-Soluble<br>Ibuprofen<br>Application No, 202211005654</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-vial"></i>
+                            <h2>Elsevier B.V May 22,2021</h2>
+                            <p>Binding behaviour of hydrophobic drug tetracine hydrochloride used as organic counterion on ionic surfactants </p>
+                            <a href="#">Learn More</a>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-atom"></i>
+                            <h2>Elsevier B.V Dec 7,2020</h2>
+                            <p>Investigation the effect of sodium <br>carboxymethylcellulose as ploycounterion on cetirizine<br>hydrochloride-sodium dodecyl sulphate mixed micelle</p>
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!---------portfolio-------------->
+           <div id="portfolio">
+                <div class="container">
+                    <h1 class="sub-title">Honors & Awards</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="images/work-1.jpeg">
+                            <div class="layer">
+                                <h3>Post-doctrol Fellowship,Japan</h3>
+                                <p>Issued by University of Pharmaceutical Sciences,<br>Japan Apr 2018</p>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                            <div class="work">
+                                <img src="images/work-2.jpeg">
+                               <div class="layer">
+                                    <h3>China Postdoctorate fellowship</h3>
+                                    <p>Issued by Dalian University of technology,Dalian Chins Jan 2016</p>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                               <div class="work">
+                                <img src="images/work-3.jpeg">
+                                    <div class="layer">
+                                        <h3>Research fellowship of meritorious student</h3>
+                                        <p>Issued by UGC India Oct 2012</p>
+                                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <a href="#" class="btn">See More</a>
+                
+                                <!---------contact-->
+                    <div id="contact">
+                        <div class="container">
+                            <div class="row">
+                                <div class="contact-left">
+                                <h1 class="sub-title">Contact Me</h1>
+                                <p><i class="fa-brands fa-linkedin"></i>Dr.Anirudh Srivastava</p>
+                                <p><i class="fa-solid fa-square-phone"></i>8924076936</p>
+                                <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                
+                        <div class="contact-right">
+                            <form>
+                                <input tpe="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright @ Vansh Made with <i class="fa-solid fa-heart-pulse"></i></p>
+                </div>
+            </div>
+    
+
+
+        <script>
+
+            var tablinks= document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-2000px";
+            }
+            </script>
+
+
+
+</body>
+</html>
